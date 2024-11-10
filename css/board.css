@@ -1,0 +1,187 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #A69080;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Background Styling */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/bg.jpeg') no-repeat 250px 0px;
+    background-size: 95%;
+    filter: blur(5.5px);
+    z-index: -1;  /* Ensure the background is behind the main content */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E362E;
+    padding: 10px 20px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Header Text Styling */
+.header-text {
+    text-align: center;
+    color: #AC8968;
+    flex-grow: 1;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-family: 'Lohit Tamil', serif;
+    font-size: 32px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #865D36;
+    width: 250px;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 170px;
+    padding: 15px;
+    background-color: #93785B;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: 1px solid #3E362E;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    transform: scale(1.05);
+}
+
+/* Main Container Styling */
+.container {
+    background-color: #AC8968;
+    padding: 60px 50px;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 160px; /* Space from the header */
+    margin-bottom: 100px; /* Space from the footer */
+}
+
+/* Heading and Text Styling */
+.container h1 {
+    font-size: 36px;
+    color: #3E362E;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #3E362E;
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    font-size: 22px;
+    color: #3E362E;
+    margin-bottom: 15px;
+}
+
+.container p,
+.container ul li {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* List Styling with Consistent Spacing */
+.container ul li {
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: right;
+    padding: 15px 20px;
+    background-color: #3E362E;
+    color: #AC8968;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/* Additional Styling for Consistency */
+.intro-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.accreditation p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.highlight.ita {
+    color: #44a5ff;
+}
+
+.highlight.wasc {
+    color: #56ff34;
+}
+
+.highlight.pusd {
+    color: #ee7cf8;
+}
+
+.highlight.pvsa {
+    color: #ff852e;
+}

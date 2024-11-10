@@ -1,0 +1,171 @@
+/* General Body Styling for Contact Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #A69080;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Background Image Section */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/bg.jpeg') no-repeat 250px 0px;
+    background-size: 95%;
+    filter: blur(5.5px);
+    z-index: -1;  /* Ensure the background is behind the main content */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E362E;
+    padding: 10px 20px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Styling for the left and right logos in the header */
+.logo-left, .logo-right {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Header Text Styling */
+.header-text {
+    text-align: center;
+    color: #AC8968;
+    flex-grow: 1;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-family: 'Lohit Tamil', serif;
+    font-size: 32px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #865D36;
+    width: 250px;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 170px;
+    padding: 15px;
+    background-color: #93785B;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: 1px solid #3E362E;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Container Styling */
+.contact-container {
+    padding: 50px 60px; /* Increased padding for more space */
+    background-color: #AC8968;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 700px; /* Increased width for a larger appearance */
+    max-width: 90%; /* Ensures responsiveness */
+    margin-top: 160px; /* Offset from the header */
+    margin-bottom: 100px; /* Offset from the footer */
+    text-align: center;
+}
+
+/* Contact Form Styling */
+.contact-section h1 {
+    font-size: 40px; /* Larger font size for title */
+    color: #3E362E;
+    margin-bottom: 30px;
+}
+
+.contact-section form label {
+    font-weight: bold;
+    color: #3E362E;
+    font-size: 18px; /* Slightly larger font for labels */
+}
+
+.contact-section form input[type="text"],
+.contact-section form input[type="email"],
+.contact-section form textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #3E362E;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #93785B;
+    color: #F5F5F5;
+    font-size: 16px; /* Slightly larger font for inputs */
+}
+
+.contact-section form input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #3E362E;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-section form input[type="submit"]:hover {
+    background-color: #865D36;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: right;
+    padding: 15px 20px;
+    background-color: #3E362E;
+    color: #AC8968;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+    z-index: 2;
+}

@@ -1,0 +1,262 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #A69080;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/bg.jpeg') no-repeat 250px 0px;
+    background-size: 95%;
+    filter: blur(5.5px);
+    z-index: -1;  /* Ensure the background is behind the main content */
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3E362E;
+    padding: 10px 20px;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Styling for the left and right logos in the header */
+.logo-left, .logo-right {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Header Text Styling */
+.header-text {
+    text-align: center;
+    color: #AC8968;
+    flex-grow: 1;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-family: 'Lohit Tamil', serif;
+    font-size: 32px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #865D36;
+    width: 250px;
+    position: fixed;
+    top: 140px;
+    left: 0;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    height: calc(100% - 140px);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 170px;
+    padding: 15px;
+    background-color: #93785B;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: 1px solid #3E362E;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Main Content Container Styling */
+.container {
+    background-color: #AC8968;
+    padding: 40px 50px; /* Adjusted padding for balanced spacing */
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+    margin-top: 10px; /* Reduce space above the heading */
+}
+
+.welcome-section h1 {
+    font-size: 42px;
+    color: #3E362E;
+    margin-bottom: 30px; /* Increase space below the heading */
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Introductory Image Styling */
+.intro-image {
+    margin-bottom: 30px; /* Adds more space between the image and highlights */
+}
+
+.intro-image img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.accreditation p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.highlight.ita {
+    color: #44a5ff;
+}
+
+.highlight.wasc {
+    color: #56ff34;
+}
+
+.highlight.pusd {
+    color: #ee7cf8;
+}
+
+.highlight.pvsa {
+    color: #ff852e;
+}
+
+
+/* Highlights Section Styling */
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.highlight-box {
+    background-color: #93785B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.highlight-box h2 {
+    font-size: 22px;
+    color: #3E362E;
+    margin-bottom: 10px;
+}
+
+.highlight-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Styling with Improved Visibility */
+.footer {
+    text-align: right;
+    padding: 15px 20px; /* Increase padding for better visibility */
+    background-color: #3E362E;
+    color: #AC8968;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    width: calc(-250px + 100%); /* Extend across the full width of the page */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    z-index: 2; /* Ensure it appears above other elements */
+}
+
+
+/* Contact Page Styling */
+.contact-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #3E362E;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3E362E;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #93785B; /* Match the sidebar background color */
+    color: #F5F5F5; /* Light text for input fields */
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3E362E;
+    color: #F5F5F5;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #865D36;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
